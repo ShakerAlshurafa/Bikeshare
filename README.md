@@ -15,6 +15,26 @@ Using **Python** and **Pandas**, the program provides insights into:
 
 The project also includes an interactive feature to display raw data upon user request.
 
+### **Installation**
+To run this project locally, follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ShakerAlshurafa/Bikeshare.git
+   ```
+2. Navigate into the project directory:
+   ```bash
+   cd bikeshare-project
+   ```
+3. Install the required dependencies:
+   ```bash
+   pip install pandas
+   pip install numpy
+   ```
+4. Run the `bikeshare_2.py` script:
+   ```bash
+   python bikeshare_2.py
+   ```
+
 ### **Files Used**
 - `bikeshare_2.py`: The main Python script.
 - `chicago.csv` : Data file containing information about Chicago.

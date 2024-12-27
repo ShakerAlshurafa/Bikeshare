@@ -6,6 +6,7 @@ import numpy as np
 # Bikeshare Analysis Project #
 ##############################
 
+# Load the dataset for Chicago, New York City, and Washington
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }

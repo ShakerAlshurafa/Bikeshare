@@ -174,19 +174,23 @@ def user_stats(df):
 
 
 def display_data(df):
-    start = 0    
+    start = 0  # Initialize the starting index for displaying rows of data
+    # Ask the user if they want to see the first 5 lines of raw data
     display = input('\nWould you like to see 5 lines of raw data? Enter (yes or no).\n').lower()
     
+    # Keep showing 5 lines of data until the user chooses 'no' or all data is displayed
     while display == 'yes':
+        # Display 5 rows of data starting from the current 'start' index
         print(df.iloc[start:start + 5])
         
-        if start+5 >= len(df):
-            print('\nNo more data to display.')
-            break
+        # Check if there are fewer than 5 rows remaining in the dataset
+        if start + 5 >= len(df):
+            print('\nNo more data to display.')  # Inform the user that all data has been shown
+            break  # Exit the loop if there is no more data to display
         
+        # Ask the user if they want to see 5 more lines of data
         display = input('\nWould you like to see 5 more lines of raw data? Enter (yes or no).\n').lower()
-        start += 5
-        
+        start += 5  # Increment the start index by 5 for the next set of rows
 
 def main():
     while True:
